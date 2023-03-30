@@ -1,0 +1,19 @@
+.question__item {
+  padding: 30px 70px;
+  margin-bottom: 20px;
+  background: #440F51 url("../img/open.svg") right 60px bottom 30px / 30px no-repeat;
+}
+
+.question__item:nth-child(even) {
+  background: #ffffff url("../img/open-purple.svg") right 60px bottom 30px / 30px no-repeat;
+}
+
+.question__text {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.question__text--black {
+  color: #1C1A1A;
+}

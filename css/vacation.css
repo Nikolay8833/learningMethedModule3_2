@@ -1,0 +1,43 @@
+.vacation__list {
+  display: flex;
+  gap: 40px 20px;
+  flex-wrap: wrap;
+}  
+
+.vacation__item {
+  display: flex;
+  align-items: end;
+  width: 380px;
+  height: 228px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding: 34px 40px;
+}
+
+.vacation__item--bg-image1 {
+  background-image: url("../img/bg-image1.jpg");
+}
+
+.vacation__item--bg-image2 {
+  background-image: url("../img/bg-image2.jpg");
+  padding-bottom: 6px;
+}
+
+.vacation__item--bg-image3 {
+  background-image: url("../img/bg-image3.jpg");
+}
+
+.vacation__item--bg-image4 {
+  background-image: url("../img/bg-image4.jpg");
+}
+
+.vacation__item--bg-image5 {
+  background-image: url("../img/bg-image5.jpg");
+  padding-bottom: 6px;
+}
+
+.vacation__item--bg-image6 {
+  background-image: url("../img/bg-image6.jpg");
+}
