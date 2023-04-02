@@ -72,7 +72,23 @@
   position: absolute;
   right: 46%;
   bottom: 90px;
-  background-image: url("../img/present-down.png");
+  background-image: url("../img/down.svg");
   width: 97px;
   height: 97px;
+}
+
+.present__down:hover {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.present__down:focus {
+  border: 1px solid #FFFFFF;
+  border: 1px solid #CD06FF;
+}
+
+.present__down:active {
+  background: #CD06FF;
+  border: 1px solid #CD06FF;
 }

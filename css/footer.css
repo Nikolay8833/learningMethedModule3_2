@@ -48,7 +48,15 @@
 }
 
 .social__link:hover {
-  color: #6C0287;
+  color: #EADEED;
+}
+
+.social__link:focus {
+  color: #EADEED;
+}
+
+.social__link:active {
+  color: #CD06FF;
 }
 
 .footer__map {
