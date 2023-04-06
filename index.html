@@ -17,11 +17,11 @@
       <img src="img/logo.svg" alt="logo" class="logo">
       <nav class="navigation">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">залы</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Бронь</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">отзывы</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+          <li class="navigation__item"><a href="#halls" class="navigation__link">залы</a></li>
+          <li class="navigation__item"><a href="#about" class="navigation__link">О нас</a></li>
+          <li class="navigation__item"><a href="#form" class="navigation__link">Бронь</a></li>
+          <li class="navigation__item"><a href="#reviews" class="navigation__link">отзывы</a></li>
+          <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
         </ul>
       </nav>
       <button class="button button--header">Заказать звонок</button>
@@ -43,7 +43,17 @@
           </div>
           <img src="img/present-img.png" alt="Photo" class="present__img">
         </div>
-        <a href="#" class="present__down"></a>
+        <a href="#" class="present__down">
+          <div class="present__down--box">
+            <svg class="present__down--svg" width=" 29" height="30" viewBox="0 0 29 30" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.425537" y="14.9161" width="1.82001" height="20.0201"
+                transform="rotate(-44.9975 0.425537 14.9161)" />
+              <rect x="14.5807" y="29.0737" width="1.82001" height="20.0201"
+                transform="rotate(-134.997 14.5807 29.0737)" />
+            </svg>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -62,7 +72,7 @@
       </div>
     </section>
 
-    <section class="halls">
+    <section class="halls" id="halls">
       <div class="container">
         <h2 class="second-title">Наши залы</h2>
         <ul class="halls__list">
@@ -74,7 +84,7 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="form">
       <div class="container">
         <form class="form__address" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <h2 class="second-title">Забронировать зал просто</h2>
@@ -176,7 +186,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="second-title">О нас</h2>
         <div class="about__wrapper">
@@ -209,7 +219,7 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <h2 class="second-title">Отзывы посетителей</h2>
       <figure class="reviews__figure">
         <figure class="reviews__wrapper">
@@ -311,10 +321,10 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
+  <footer class="footer" id="contacts">
+    <div class=" container">
       <h2 class="second-title">Контакты</h2>
-      <div class="footer__wrapper">
+      <div class=" footer__wrapper">
         <div class="contacts">
           <address class="contacts__address">
             <p class="contacts__text">г. Москва ул.

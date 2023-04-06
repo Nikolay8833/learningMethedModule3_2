@@ -48,7 +48,8 @@
   max-width: 375px;
   font-size: 26px;
   padding: 25px 70px;
-  background-color: #6C0287;
+  background: #6C0287;
+  border: none;
   border-radius: 10px;
 }
 
@@ -72,23 +73,68 @@
   position: absolute;
   right: 46%;
   bottom: 90px;
-  background-image: url("../img/down.svg");
-  width: 97px;
-  height: 97px;
 }
 
-.present__down:hover {
-  background: #FFFFFF;
+.present__down::after {
+  content: "";
+  display: inline-block;
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+}
+
+.present__down:focus::after {
+  border: 1px solid #CD06FF;
+  border-radius: 0;
+}
+
+.present__down:active::after {
+  border: 0;
+}
+
+.present__down--box {
+  position: absolute;
+}
+
+.present__down--box::after {
+  content: "";
+  display: inline-block;
+  width: 97px;
+  height: 97px;
   border: 1px solid #FFFFFF;
   border-radius: 50%;
 }
 
-.present__down:focus {
+.present__down--box:hover::after {
+  background: #FFFFFF;
   border: 1px solid #FFFFFF;
+}
+
+.present__down--box:focus::after {
   border: 1px solid #CD06FF;
 }
 
-.present__down:active {
+.present__down--box:active::after {
   background: #CD06FF;
-  border: 1px solid #CD06FF;
+  border: 1px solid #CD06FF
+}
+
+.present__down--svg {
+  position: absolute;
+  right: 35%;
+  top: 30px;
+  color: #FFFFFF;
+}
+
+.present__down--svg:hover {
+  color: #6C0287;
+}
+
+.present__down--svg:focus {
+  color: #FFFFFF;
+}
+
+.present__down--svg:active {
+  color: #FFFFFF;
 }
