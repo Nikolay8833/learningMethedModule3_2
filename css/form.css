@@ -1,5 +1,5 @@
 .form {
-  background-color: #440F51;
+  background: #440F51;
   padding: 80px 0 130px;
 }
 
@@ -97,7 +97,8 @@
   border: 3px solid #640AA3;
 }
 
-.form__label--flex:focus { 
+.form__input--flex:focus { 
+  display: block;
   background: #FFFFFF;
   border: 3px solid #640AA3;
 }
@@ -114,7 +115,7 @@
 
 .form__input--text {
   position: absolute; 
-  top: 8px;
+  top: 4px;
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
@@ -147,6 +148,14 @@
   line-height: 28px;
   padding: 0 20px;
   text-align: start;
+}
+
+.form__input--submit-size::after {
+  content: "";
+  display: inline-block;
+  width: 21px;
+  height: 15px;
+  background: url("../img/Group28.png") no-repeat 20px 20px;
 }
 
 .form__input--submit-size1 {

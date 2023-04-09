@@ -75,66 +75,36 @@
   bottom: 90px;
 }
 
-.present__down::after {
-  content: "";
-  display: inline-block;
-  width: 97px;
-  height: 97px;
-  border-radius: 50%;
-  border: 1px solid #FFFFFF;
+.present__down:hover > svg > .present__down--circle {
+  fill: #FFFFFF;
 }
 
-.present__down:focus::after {
-  border: 1px solid #CD06FF;
-  border-radius: 0;
+.present__down:hover > svg > .present__down--rect {
+  fill: #6C0287;
 }
 
-.present__down:active::after {
-  border: 0;
+.present__down:focus > svg > .present__down--circle {
+  fill: none;
+  stroke: #FFFFFF;
 }
 
-.present__down--box {
-  position: absolute;
+.present__down:focus > svg > .present__down--rect {
+  fill: #FFFFFF;
 }
 
-.present__down--box::after {
-  content: "";
-  display: inline-block;
-  width: 97px;
-  height: 97px;
-  border: 1px solid #FFFFFF;
-  border-radius: 50%;
+.present__down:focus > svg > .present__down--rect-border {
+  stroke: #CD06FF;
 }
 
-.present__down--box:hover::after {
-  background: #FFFFFF;
-  border: 1px solid #FFFFFF;
+.present__down:active > svg > .present__down--circle {
+  fill: #CD06FF;
+  stroke: #CD06FF;
 }
 
-.present__down--box:focus::after {
-  border: 1px solid #CD06FF;
+.present__down:active > svg > .present__down--rect {
+  fill: #FFFFFF;
 }
 
-.present__down--box:active::after {
-  background: #CD06FF;
-  border: 1px solid #CD06FF
-}
-
-.present__down--svg {
-  position: absolute;
-  right: 35%;
-  top: 30px;
-  color: #FFFFFF;
-}
-
-.present__down--svg:hover {
-  color: #6C0287;
-}
-
-.present__down--svg:focus {
-  color: #FFFFFF;
-}
-
-.present__down--svg:active {
-  color: #FFFFFF;
+.present__down:active > svg > .present__down--rect-border {
+  stroke: none;
 }
