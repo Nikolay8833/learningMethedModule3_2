@@ -15,7 +15,9 @@
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;
+  text-align: center;
   text-transform: uppercase;
+  white-space: pre-line;
   width: 575px;
   height: 350px;
 }
